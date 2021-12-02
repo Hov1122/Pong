@@ -52,7 +52,7 @@ void Game::processKeys()
         moveBall();
 
         if (keys[Qt::Key_Left])
-            if (player1.pos.x() - player1.step - player1.length > 1) {
+            if(player1.pos.x() - player1.step - player1.length > 1) {
                 player1.pos.setX(player1.pos.x() - player1.step);
                 update();
             }
